@@ -24,3 +24,54 @@ html {
     --formTextAndBorders: #CECECE;
     --mainWhite: #ffffff;
 }
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--lightPurple);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Background Circles Styling */
+
+.leftPurpleCircle, .bigGreyCircle, .smallRedCircle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.leftPurpleCircle {
+    height: 70%;
+    width: 30%;
+    background-color: var(--darkPurple);
+    bottom: -10%;
+    left: -15%;
+}
+
+.bigGreyCircle {
+    height: 110%;
+    width: 60%;
+    background-color: var(--bigCircleGrey);
+    right: -20%;
+    bottom: -10%;
+}
+
+.smallRedCircle {
+    height: 90%;
+    width: 50%;
+    background-color: var(--smallCircleRed);
+    right: -20%;
+    bottom: -10%;
+}
+
+/* Contact Section Styling */
+
+.contactSections {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
