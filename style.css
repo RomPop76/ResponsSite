@@ -78,3 +78,9 @@ html {
 
 /* Left Section With H1 and Icons */
 
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
