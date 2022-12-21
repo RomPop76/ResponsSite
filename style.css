@@ -84,3 +84,56 @@ html {
     justify-content: flex-start;
     align-items: center;
 }
+
+.leftSection h1 {
+    color: var(--mainWhite);
+    font-size: 8rem;
+    position: relative;
+    margin-top: 1em;
+}
+
+.leftSectionspan {
+    display: block;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 5em;
+}
+
+.contactIcons img {
+    margin-right: 2.5em;
+}
+
+.leftSection h1::after {
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 5%;
+    background: var(--mainWhite);
+    left: 0;
+    bottom: -.3em;
+    border-radius: 5px;
+} 
+
+/* Right Section with form */
+
+.rightSection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mainWhite);
+    padding: 4em 6em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid var(--formTextAndBorders);
+}
+
+input, textarea {
+    font-size: 2rem;
+}
