@@ -136,4 +136,46 @@ input {
 
 input, textarea {
     font-size: 2rem;
+    margin: 1em;
+    padding: .5em;
+    color: var(--darkPurple);
+    outline: var(--darkPurple);
+}
+
+input:focus {
+    border-bottom: 2px solid var(--lightPurple);
+}  
+
+input:focus::placeholder {
+    color: var(--lightPurple);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--formTextAndBorders);
+}
+
+textarea {
+    border: 2px solid var(--formTextAndBorders);
+}
+
+textarea:focus {
+    border: 2px solid var(--lightPurple);
+}
+
+button {
+    font-size: 2rem;
+    color: var(--mainWhite);
+    background: var(--darkPurple);
+    border: none;
+    width: 9em;
+    margin: 0 auto;
+    padding: .5em;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background-color: var(--lightPurple);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
