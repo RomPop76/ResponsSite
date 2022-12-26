@@ -173,9 +173,108 @@ button {
     border-radius: 20px;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    outline: none;
 }
 
 button:hover, button:focus {
     background-color: var(--lightPurple);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* MEDIA QUERIES------------- */
+
+/* 1200px */
+
+@media only screen and (max-width: 1200px) {
+    .leftSection h1 {
+        font-size: 6rem;
+    }
+
+    input,textarea {
+        font-size: 1.7rem;
+    }
+}
+
+/* 1000px */
+
+@media only screen and (max-width: 1000px) {
+    .bigGreyCircle {
+        display: none;
+    }
+
+    .contactSections {
+        flex-direction: column;
+    }
+
+    .contactIcons {
+        align-self: center;
+    }
+
+    .rightSection {
+        width: 70%;
+        margin: 3em auto;
+    }
+}
+
+/* 800px */
+
+@media only screen and (max-width: 800px) {
+    .smallRedCircle {
+        height: 60%;
+    }
+
+    .leftSection h1 {
+        font-size: 5.2rem;
+    }
+
+    .contactIcon img {
+        width: 4.5em;
+    }
+
+    .rightSection {
+        padding: 2em 5em;
+    }
+
+    input, textarea {
+        font-size: 1.5rem;
+    }
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px) {
+    .rightSection {
+        width: 85%;
+    }
+
+    button {
+        margin: .5em auto;
+    }
+}
+
+/* 400px */
+
+@media only screen and (max-width: 400px) {
+    .leftSection h1 {
+        font-size: 4.4rem;
+    }
+
+    .rightSection {
+        padding: 1em 2.5em;
+    }
+}
+/* 330px */
+
+@media only screen and (max-width: 330px) {
+    .leftSection h1 {
+        font-size: 4.3rem;
+    }
+
+    .rightSection {
+        padding: 1em 1.8em;
+    }
+
+    button {
+        width: 7em;
+    }
 }
